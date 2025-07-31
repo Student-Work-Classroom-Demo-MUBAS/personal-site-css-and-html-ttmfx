@@ -1,0 +1,163 @@
+:root {
+  --primary-color: white;
+  --highlight-color: #ff9900;
+  --dark-text: #1a1a1a;
+  --accent-color: #ffc83d;
+  --orange_color: #FAA661;
+  --purple_color: #C3A2FD;
+  --green_color: #ADFC36;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--dark-text);
+  line-height: 1.6;
+  padding-top: 36px;
+  
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    top: 20px;
+   
+   /* border: 1px solid rgba(0, 0, 0, 0.05); */
+}
+
+
+header {
+  position: static;
+  top: 0;
+  width: 90%;
+  z-index: 1000;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  /* background-color: #fff; */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+   background: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(10px);
+   border: 1px solid rgba(0, 0, 0, 0.05);
+
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(240, 240, 240, 0.9); ;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--dark-text);
+  font-weight: 500;
+}
+
+.btn-call {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+ .orange {
+  background-color: #ffe4b3;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.purple {
+  background-color: #C3A2FD;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.green {
+  background-color: #ADFC36;
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+@media(min-width: 768px) {
+  .hero {
+    flex-direction: row;
+  }
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+
+.hero-text p {
+  margin-bottom: 1rem;
+}
+
+.hero-text button {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img img {
+  max-width: 100%;
+  height: auto;
+  /* border-radius: 20px;
+  border: 4px solid #ddd; */
+}
+
+
