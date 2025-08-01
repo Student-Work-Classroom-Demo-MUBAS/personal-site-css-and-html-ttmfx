@@ -8,6 +8,10 @@
   --green_color: #ADFC36;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -78,6 +82,28 @@ header nav ul li a {
   text-decoration: none;
   color: var(--dark-text);
   font-weight: 500;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.nav-link.active::after {
+  width: 100%;
 }
 
 .btn-call {
@@ -471,6 +497,44 @@ padding: 12px 24px;
 .submit-btn:hover {
   padding: 16px 24px;
 }
+.resume-link-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  color: #000;
+  border-top: 1px solid #eee;
+}
+
+.resume-link-section .resume-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.resume-link-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  color: #000;
+}
+
+.resume-link-section p {
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
+
+.resume-button {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #222;
+}
+
 
 
 /* Responsive */

@@ -12,11 +12,11 @@
     <div class="logo">t</div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About me</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#">Resume</a></li>
+        <li><a href="#" class="nav-link active">Home</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#about-me" class="nav-link">About me</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
       </ul>
     </nav>
     <button class="btn-call">Book a call</button>
@@ -79,7 +79,7 @@
         <li>Income and expense Tracking</li>
         <li>Notes writing and Management</li>
       </ul>
-      <a href="#" class="project-btn">🔗 See Design</a>
+      <a href="https://track-it-website-2.vercel.app/" class="project-btn">🔗 See Design</a>
     </div>
   </div>
 
@@ -93,7 +93,7 @@
         <li>Dark mode support</li>
         <li>Progress tracker and notifications</li>
       </ul>
-      <a href="#" class="project-btn">🔗 Source Code</a>
+      <a href="https://track-it-website-2.vercel.app/" class="project-btn">🔗 Source Code</a>
     </div>
   </div>
 
@@ -107,7 +107,7 @@
         <li>Setting Appointments</li>
         <li>Sending alerts to Doctors and guardians</li>
       </ul>
-      <a href="#" class="project-btn">🔗 See Design</a>
+      <a href="https://www.figma.com/proto/gTs80r0Lrca2n4Jwr25UEt/Untitled?node-id=0-1&t=8WdhuzMlaBZh4mZE-1" class="project-btn">🔗 See Design</a>
     </div>
   </div>
 
@@ -121,12 +121,12 @@
         <li>Uses Raspberry Pi and Android WebSocket</li>
         <li>Mobile notifications for events</li>
       </ul>
-      <a href="https://github.com/yourusername/home-automation" class="project-btn">🔗 Source Code</a>
+      <a href="https://github.com/ttmfx/smart-home-system/tree/master" class="project-btn">🔗 Source Code</a>
     </div>
   </div>
 </section>
 
-<section class="about-me">
+<section id="about-me" class="about-me">
   <div class="about-container">
     <h2>About Me</h2>
     <p>Hi, I'm <strong>Twambi Musukwa</strong>, a passionate software developer with a background in <strong>Electronics and Computer Engineering</strong>.</p>
@@ -142,7 +142,7 @@
   </div>
   <img class="about-image" src="assets/images/about_image.png" />
 </section>
-<section class="contact-section">
+<section id="contact" class="contact-section">
   <div class="contact-container">
     <h2>Contact Us</h2>
     <form class="contact-form">
@@ -165,6 +165,23 @@
     </form>
   </div>
 </section>
+<section id="resume" class="resume-link-section">
+  <div class="resume-container">
+    <h2>Want to Know More?</h2>
+    <p>For more detailed information about my work, skills, and experience, you can view my full resume.</p>
+    <a href="resume.html" class="resume-button">View Full Resume</a>
+  </div>
+</section>
+<script>
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.forEach(l => l.classList.remove('active')); // remove from all
+      link.classList.add('active'); // add to clicked one
+    });
+  });
+</script>
 
 </body>
 </html>
